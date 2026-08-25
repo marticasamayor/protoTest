@@ -41,9 +41,9 @@ Bringing up a new board or verifying wiring on a bench usually means opening the
 
 ## Screenshots
 
-| Main window |
-|---|
-| ![Main window](docs/screenshot-main.png) |
+| Main window | First-run setup |
+|---|---|
+| ![Main window](docs/screenshot-main.png) | ![Setup dialog](docs/screenshot-setup.png) |
 
 ## Supported boards
 

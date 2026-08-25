@@ -13,8 +13,8 @@ from pathlib import Path
 
 from PySide6.QtCore import QObject, QProcess, Signal
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
-TOOLS_DIR = PROJECT_ROOT / "tools"
+from core.paths import TOOLS_DIR
+
 CLI_EXE = TOOLS_DIR / "arduino-cli.exe"
 
 LATEST_RELEASE_API = "https://api.github.com/repos/arduino/arduino-cli/releases/latest"

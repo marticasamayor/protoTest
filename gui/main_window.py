@@ -1,7 +1,6 @@
 """Finestra principal: orquestra generacio -> compilacio -> pujada -> monitor serial."""
 
 import shutil
-from pathlib import Path
 
 import serial.tools.list_ports
 from PySide6.QtCore import QThread, QTimer
@@ -22,12 +21,11 @@ from PySide6.QtWidgets import (
 from core import codegen, port_utils
 from core.arduino_cli import CliRunner, compile_args, upload_args
 from core.boards import BOARD_REGISTRY, BoardDefinition
+from core.paths import BUILD_ROOT
 from core.serial_worker import SerialWorker
 from core.tests_registry import TEST_REGISTRY, TestDefinition
 from gui.console_widget import ConsoleWidget
 from gui.pin_fields_widget import PinFieldsWidget
-
-BUILD_ROOT = Path(__file__).resolve().parent.parent / "build"
 
 RECONNECT_POLL_MS = 300
 RECONNECT_TIMEOUT_MS = 8000

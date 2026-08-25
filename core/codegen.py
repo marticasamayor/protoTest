@@ -3,9 +3,8 @@
 import re
 from pathlib import Path
 
+from core.paths import TEMPLATES_DIR
 from core.tests_registry import TestDefinition
-
-TEMPLATES_DIR = Path(__file__).resolve().parent.parent / "templates"
 
 _PLACEHOLDER_RE = re.compile(r"__[A-Z0-9_]+__")
 
